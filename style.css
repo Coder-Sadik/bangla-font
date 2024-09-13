@@ -1,0 +1,104 @@
+/* reset css  */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
+	min-height: 100vh;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* reset ends here */
+/* font  */
+@font-face {
+	font-family: "bangla-1";
+	src: url(./Fonts/Li\ Shohid\ Abu\ Sayed\ Unicode.ttf);
+}
+@font-face {
+	font-family: "bangla-2";
+	src: url(./Fonts/Li\ Abu\ J\ M\ Akkas\ Unicode.ttf);
+}
+body {
+	font-family: "bangla-1";
+}
+.navbar {
+	position: sticky;
+	top: 0;
+}
+.logo {
+	margin: 0 auto;
+	font-family: bangla-2;
+	font-size: 3rem;
+	font-weight: bold;
+}
+.gradient {
+	width: fit-content;
+	background: linear-gradient(90deg, #0090f7, #c95df8 40%, #f4520b 95%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+}
+
+.glass {
+	width: inherit;
+	height: inherit;
+	background: rgba(255, 255, 255, 0.2);
+	padding: 20px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.wrapper {
+	margin: 50px 20%;
+}
+
+.content .heading {
+	font-size: 2rem;
+	border-bottom: 3px solid gray;
+}
+.date {
+	color: gray;
+}
+.article {
+	margin-bottom: 50px;
+	columns: 2;
+}
+.article-header {
+	margin-top: 20px;
+}
